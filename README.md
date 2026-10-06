@@ -32,16 +32,22 @@ Each of the spreadsheets contain, among others, the following columns relevant t
 
 ## Methodology
 
-The notebook [`tktktktk.ipynb`](notebooks/tktktktk.ipynb) performs the following analyses:
+The notebook [notebook milk production.ipynb] performs the following analyses:
 
-##### Part 1: TKTK
+**Part 1: Preparing and combining the data**
 
-- Description of what you did with the data
+* Loads the USDA milk production data for Texas, New Mexico and Arizona, which all showed rising average temperatures over 20 years and are also milk-producing states.
+* Uses average temperature rather than maximum temperature, because maximums turned out to be outliers.
+* Merges the milk and weather data by state and month.
 
+**Part 2: Isolating summer (Quarter 3)**
 
-##### Part 2: TKTK
+* Filters to Q3 (July, August, September), the months with complete data, and compares production and temperature from 2006 to 2026.
+* Pivot tables in Google Sheets were used to isolate Q3 and chart the trends. There is one sheet per state:
+  * [Arizona heat and milk](https://docs.google.com/spreadsheets/d/110E_P_dDfr7Fj4Uh9zGJzABNGiVzNvpRR6xPYKGbHBk/edit?usp=sharing)
+  * [New Mexico heat and milk](https://docs.google.com/spreadsheets/d/1y6tV4S2syDx13DvyeQ3IQNo-_GnVERLwX8vlKnKxhew/edit?usp=sharing)
+  * [Texas heat and milk](https://docs.google.com/spreadsheets/d/1AioW9NauQKgSoJgqqfRaWq3KINv6O0LD1pesYUz343A/edit?usp=sharing)
 
-- Description of what you did with the data
 
 ## Findings
 
@@ -54,11 +60,6 @@ In all three states, milk production per cow increased over time even as average
 
 * State-level averages can hide heat stress that happens on individual farms.
 * Average temperature is not the same as the heat index, which also accounts for humidity. This analysis does not include humidity.
-* [Arizona's average temperature differs between my charts. I haven't yet figured out why.]
-* Datawrapper couldn't build a combo chart, so temperature and production are shown separately.
-
-## Outputs
-
 
 
 ## Outputs
